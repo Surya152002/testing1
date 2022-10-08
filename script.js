@@ -28,9 +28,16 @@ function deviceOrientationListener(event) {
      ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
      ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
-     console.log("Alpha:" + Math.round(event.alpha));
-     console.log("Beta:" + Math.round(event.beta));
-     console.log("Gamma:" + Math.round(event.gamma));
+     
+     function table_console() {
+           console.log("Alpha:" + Math.round(event.alpha));
+           console.log("Beta:" + Math.round(event.beta));
+           console.log("Gamma:" + Math.round(event.gamma));
+            console.table(["Alpha:" + Math.round(event.alpha)]);
+         console.table(["Beta:" + Math.round(event.beta)]);
+         console.table(["Gamma:" + Math.round(event.gamma)]);
+                
+        }
 
      var img = document.getElementById('cd');
      var GammaVal = round(event.gamma);
