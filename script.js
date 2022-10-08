@@ -33,9 +33,9 @@ function deviceOrientationListener(event) {
            console.log("Alpha:" + Math.round(event.alpha));
            console.log("Beta:" + Math.round(event.beta));
            console.log("Gamma:" + Math.round(event.gamma));
-            console.table(["Alpha:" + Math.round(event.alpha)]);
-         console.table(["Beta:" + Math.round(event.beta)]);
-         console.table(["Gamma:" + Math.round(event.gamma)]);
+            console.table("Alpha:" + Math.round(event.alpha));
+         console.table("Beta:" + Math.round(event.beta));
+         console.table("Gamma:" + Math.round(event.gamma));
                 
         }
 
